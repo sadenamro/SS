@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+
+:root {
+  /* Royal Palette */
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4C430;
+  --color-gold-dark: #AA8C2C;
+
+  --color-blue-royal: #1E3A8A;
+  --color-blue-deep: #172554;
+
+  --color-marble: #F8FAFC;
+  --color-stone: #E2E8F0;
+
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #334155;
+  --color-text-light: #F1F5F9;
+
+  /* Fonts */
+  --font-heading: 'Reem Kufi', sans-serif;
+  --font-body: 'Amiri', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-blue-deep);
+  color: var(--color-text-light);
+  direction: rtl;
+  /* Right-to-Left for Arabic */
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-gold);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-blue-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-light);
+}
